@@ -36,10 +36,12 @@ public class AlumnoServ {
 
     }
 
+public Alumno registar(Alumno alumno){
+        return alumnoRepo.save(alumno);
 
-    public void registrarAlumno(Alumno alumno){
-        alumnoRepo.save(alumno);
-    }
+}
+
+
     public HashMap<String,String> eliminarxId(Integer id){
 HashMap<String,String>respuesta=
         new HashMap<String,String>();
